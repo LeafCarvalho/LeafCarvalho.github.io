@@ -473,10 +473,22 @@ a,
 /* RESPONSIVE */
 @media (min-width:2000px) {
 
+  #cabecalho, #section-about, #projects {
+    padding-bottom: 55px;
+  }
+
+  .inner {
+    padding-bottom: 100px;
+  }
+
   .header-container {
     height: 100vh;
     background-position: 90rem 7rem;
     background-size: 87.7vh;
+  }
+
+  .header-default {
+    margin-top: 55px;
   }
 
   .checkbox-container h1 {
@@ -484,7 +496,7 @@ a,
   }
 
   .checkbox-container h2 {
-    width: 27.6ch;
+    width: 27.8ch;
     font-size: 35px;
   }
 
