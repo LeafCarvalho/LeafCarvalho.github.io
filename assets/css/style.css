@@ -671,6 +671,10 @@ a,
 
 @media (max-width:480px) {
 
+  .header-container {
+    padding-left: 50px;
+  }
+
   .mobile-menu div {
     width: 35px;
     height: 3px;
