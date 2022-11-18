@@ -150,7 +150,7 @@ nav {
 }
 
 .checkbox-container h2 {
-  width: 31.1ch;
+  width: 31.3ch;
   color: #08fdd8;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -471,6 +471,10 @@ a,
 
 
 /* RESPONSIVE */
+
+
+
+
 @media (min-width:2000px) {
 
   #cabecalho, #section-about, #projects {
@@ -582,7 +586,7 @@ a,
   }
 
   .checkbox-container h2 {
-    width: 27.6ch;
+    width: 27.7ch;
     font-size: 35px;
   }
 
@@ -665,7 +669,7 @@ a,
   }
 
   .checkbox-container h2 {
-    width: 30.5ch;
+    width: 30.6ch;
     font-size: 22px;
   }
 
