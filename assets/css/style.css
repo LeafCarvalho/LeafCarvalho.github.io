@@ -674,10 +674,6 @@ a,
 
 @media (max-width:480px) {
 
-  .header-container {
-    padding-left: 50px;
-  }
-
   .mobile-menu div {
     width: 35px;
     height: 3px;
@@ -757,5 +753,11 @@ a,
   footer {
     text-align: justify;
     font-size: 16.2px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 60vh;
   }
 }
