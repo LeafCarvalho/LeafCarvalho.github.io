@@ -6,6 +6,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -757,7 +758,14 @@ a,
 }
 
 @media (max-width: 400px) {
-  body {
-    width: 60vh;
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .header-container{
+    padding-left: 20px;
   }
 }
