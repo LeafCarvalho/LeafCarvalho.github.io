@@ -1,6 +1,9 @@
 # Portólio Rafael Carvalho
 Meu portfólio contendo informações sobre mim, meu objetivo, minhas habilidades e experiências profissionais e acadêmicas. Também nele adiciono os projetos que mais impactaram nos meus conhecimentos e as ferramentas foco de estudo.
 
+# Veja a aplicação funcionando
+[Acesse o repositório online aqui](https://leafcarvalho.github.io)
+
  # Tecnologias Utilizadas:
  HTML, CSS, JAVASCRIPT
  
