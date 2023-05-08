@@ -13,3 +13,6 @@ Meu portfólio contendo informações sobre mim, meu objetivo, minhas habilidade
  # Pendências:
  - [ ] Aplicar o DRY
  - [ ] Utilizar o SASS
+
+# Preview:
+![Screenshot_1](https://user-images.githubusercontent.com/79648062/236955803-62912a8d-82ce-4b1f-b422-117ed1795478.png)
