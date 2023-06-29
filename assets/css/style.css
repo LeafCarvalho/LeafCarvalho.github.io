@@ -771,7 +771,7 @@ a,
 
   .about-me{
     padding: 50px 2px 0 2px;
-    height: 100vh;
+    height: 50vh;
   }
   
 
@@ -831,5 +831,8 @@ a,
   }
   .header-container{
     padding-left: 20px;
+  }
+  .about-me {
+    height: 50vh;
   }
 }
