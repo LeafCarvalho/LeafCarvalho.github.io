@@ -770,8 +770,8 @@ a,
   }
 
   .about-me{
-    padding: 50px 2px 0 2px;
-    height: 50vh;
+    padding: 30px 3px 0 3px;
+    height: 45vh;
   }
   
 
@@ -831,8 +831,5 @@ a,
   }
   .header-container{
     padding-left: 20px;
-  }
-  .about-me {
-    height: 50vh;
   }
 }
