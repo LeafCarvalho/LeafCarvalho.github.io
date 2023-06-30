@@ -54,4 +54,3 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-// Active nav-end
