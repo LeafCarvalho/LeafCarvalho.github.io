@@ -3,6 +3,12 @@
 
 /* ALL */
 
+:root {
+  --lines-blue: #0dd4b7b4;
+  --main-color-blue: #08fdd8;
+  --purple-color: #4e0d4e;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -60,12 +66,13 @@ nav {
   text-decoration: none;
   padding: 0 10px;
   position: relative;
+  color: #fff;
 }
 
 .nav-list li a:after {
   content: "";
   position: absolute;
-  background-color: rgb(46, 204, 113);
+  background-color: var(--lines-blue);
   border-radius: 25px;
   height: 3px;
   width: 0;
@@ -148,11 +155,12 @@ nav {
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  color: #fff;
 }
 
 .checkbox-container h2 {
   width: 35ch;
-  color: #08fdd8;
+  color: var(--main-color-blue);
   text-transform: uppercase;
   letter-spacing: 4px;
   animation: typing 3.5s steps(40), blink .6s step-end infinite alternate;
@@ -174,13 +182,6 @@ nav {
   }
 }
 
-h1,
-a,
-.social-media a,
-.card-wrapper h2 {
-  color: #fff;
-}
-
 .social-media {
   margin-top: 1rem;
   display: flex;
@@ -190,6 +191,7 @@ a,
   text-decoration: none;
   padding: 0.8rem 4.5rem;
   border: 1px solid #1e1e2a;
+  color: #fff;
   min-width: 4.5rem;
   display: flex;
   align-items: center;
@@ -198,7 +200,8 @@ a,
 }
 
 .social-media a:hover {
-  background-color: #8d5fbf;
+  color: var(--main-color-blue);
+  background-color: var(--purple-color);
 }
 
 
@@ -240,7 +243,7 @@ a,
   transform: translateX(-50%);
   height: 4px;
   width: 100px;
-  background-color: #2ecc71;
+  background-color: var(--lines-blue);
   border-radius: 2px;
 }
 
@@ -257,6 +260,7 @@ a,
   padding: 1rem;
   font-size: 1.5rem;
   position: relative;
+  color: var(--purple-color);
 }
 
 .header-default:after {
@@ -267,7 +271,7 @@ a,
   transform: translateX(-50%);
   height: 4px;
   width: 100px;
-  background-color: #2ecc71;
+  background-color: var(--lines-blue);
   border-radius: 2px;
 }
 
@@ -285,7 +289,6 @@ a,
 .skill-box {
   padding: 1rem;
   color: #ddd;
-  cursor: pointer;
 }
 
 .skill-box:hover>.skill-title:after,
@@ -314,7 +317,7 @@ a,
   width: 0;
   height: 4px;
   border-radius: 2px 0 0 2px;
-  background-color: #2ecc71;
+  background-color: var(--lines-blue);
   transition: .5s;
 }
 
@@ -326,7 +329,7 @@ a,
   width: 0;
   height: 4px;
   border-radius: 0 2px 2px 0;
-  background-color: #2ecc71;
+  background-color: var(--lines-blue);
   transition: .5s;
 }
 
@@ -344,7 +347,7 @@ a,
   justify-content: center;
   align-items: center;
   transition: .5s;
-  background-image: linear-gradient(to bottom, #2ecc71, #4e0d4e);
+  background-image: linear-gradient(to bottom, var(--main-color-blue), #4e0d4e);
 }
 
 
@@ -366,7 +369,7 @@ a,
 /* PROJECTS */
 
 #projects{
-  padding-top: 50px;
+  padding-top: 80px;
   background-color: #cccbcb;
 }
 
@@ -381,7 +384,7 @@ a,
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: justify;
   width: 100%;
   height: 100%;
 }
@@ -396,7 +399,6 @@ a,
   display: inline-block;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   filter: opacity(0.5);
   transition: .5s ease-in-out;
 }
@@ -414,17 +416,18 @@ a,
 #done {
   background-image: linear-gradient(
     -225deg,
-    #2ecc71 0%,
+    var(--lines-blue) 0%,
     #4e0d4e 25%,
-    #2ecc71 50%,
+    var(--lines-blue) 50%,
     #4e0d4e 75%,
-    #2ecc71 100%
+    var(--lines-blue) 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 7s linear infinite;
   display: inline-block;
+  cursor: pointer;
 }
 
 
@@ -442,6 +445,7 @@ a,
 }
 
 #codando{
+  color: #fff;
   -webkit-text-stroke: 1px #fff;
   text-shadow: 0 0 10px;
   display: inline-block;
@@ -467,13 +471,14 @@ a,
 }
 
 .card-text span{
-  color: #08fdd8;
+  color: #2e2e2e;
+  font-weight: 600;
 }
 
 #conheca-me {
   text-decoration: none;
-  color: #08fdd8;
-  transform: scaleX(1.0);
+  color: #2e2e2e;
+  font-weight: 600;
 }
 
 .card-wrapper {
@@ -540,7 +545,8 @@ a,
   }
 
   .header-default {
-    margin-top: 55px;
+    padding: 0;
+    margin-top: 25px;
   }
 
   .checkbox-container h1 {
