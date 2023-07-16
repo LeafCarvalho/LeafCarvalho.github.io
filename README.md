@@ -1,18 +1,22 @@
-# Portólio Rafael Carvalho
+# <p align="center">Portfólio Rafael Carvalho - Desenvolvedor Front-End</p>
+
+## Sobre o projeto
 Meu portfólio contendo informações sobre mim, meu objetivo, minhas habilidades e experiências profissionais e acadêmicas. Também nele adiciono os projetos que mais impactaram nos meus conhecimentos e as ferramentas foco de estudo.
 
 # Veja a aplicação funcionando
-[Acesse o repositório online aqui](https://leafcarvalho.github.io)
+[Acesse o repositório online clicando aqui](https://leafcarvalho.github.io)
 
- # Tecnologias Utilizadas:
- HTML, CSS, JAVASCRIPT
- 
- # CONCEITOS APLICADOS:
- Reponsividade, Adaptação ao conceito de **SPA**, Estruturação de código, Paginação.
- 
- # Pendências:
- - [ ] Aplicar o DRY
- - [ ] Utilizar o SASS
+## Layout Mobile
+![image](https://github.com/LeafCarvalho/LeafCarvalho.github.io/assets/79648062/4cab5766-c0d2-4ad8-bd92-e4cce7c865dc)
+![image](https://github.com/LeafCarvalho/LeafCarvalho.github.io/assets/79648062/0b56ac4c-7d06-4300-a2f1-840a927bd3b0)
 
-# Preview:
-![Screenshot_1](https://user-images.githubusercontent.com/79648062/236955803-62912a8d-82ce-4b1f-b422-117ed1795478.png)
+## Layout Web
+![image](https://github.com/LeafCarvalho/LeafCarvalho.github.io/assets/79648062/efd055bd-e30e-4a2c-bb47-ecc26dfab2bb)
+
+## Tecnologias Utilizadas / Bibliotecas
+- HTML, CSS, JS
+
+## Autor
+Rafael Carvalho
+
+https://www.linkedin.com/in/rafaelcarvalhosl/
