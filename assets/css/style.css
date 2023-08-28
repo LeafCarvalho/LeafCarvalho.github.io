@@ -15,10 +15,7 @@
   box-sizing: border-box;
 }
 
-html {
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-}
+
 
 body:not(nav) {
   font-family: 'Poppins', sans-serif;
