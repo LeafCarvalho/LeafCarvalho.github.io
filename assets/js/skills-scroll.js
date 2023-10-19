@@ -28,16 +28,23 @@ window.addEventListener('scroll', () => {
     }
 })
 
+// Selecione todos os links âncora dentro da sua navegação
 const navLinks = document.querySelectorAll('nav a');
+
+// Adicione um ouvinte de evento de clique a cada link
 navLinks.forEach(link => {
   link.addEventListener('click', function (e) {
+    // Impede o comportamento padrão de seguir o link
     e.preventDefault();
 
-    const targetId = this.getAttribute('href').substring(1);
+    // Recupere o valor do atributo "href" do link
+    const targetId = this.getAttribute('href').substring(1); // Remove o "#" do início
+
+    // Role para o elemento com o ID correspondente
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth' // Para uma rolagem suave, se desejar
       });
     }
   });
