@@ -3,14 +3,18 @@
 import CafeteriaImagem from '/projects/logoCafeteria.webp'
 import PokebolaImagem from '/projects/logoPokebola.png'
 import PreviewCafeteria from '/projects/PreviewCafeteriaSoZe.gif'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const projects = [
-  { name: "Cafeteria Sô Zé", image: CafeteriaImagem, url: "https://leafcarvalho.github.io/Cafeteria_So_Ze/", preview: PreviewCafeteria },
-  { name: "Pokedex", image: PokebolaImagem, url: "https://leafcarvalho.github.io/react_pokedex/" },
-];
 
 export const Projects = () => {
+
+  const location = useLocation();
+
+  const projects = [
+    { name: "Cafeteria Sô Zé", image: CafeteriaImagem, url: `${location.pathname}Cafeteria_So_Ze`, preview: PreviewCafeteria },
+    { name: "Pokedex", image: PokebolaImagem, url: `${location.pathname}react_pokedex` },
+  ];
+
   // const [selectedProject, setSelectedProject] = useState(null);
 
   /*const openModal = (project) => {
