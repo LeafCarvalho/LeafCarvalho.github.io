@@ -10,7 +10,11 @@ export default defineConfig({
       plugins: [
         tailwindcss(),
         autoprefixer()
-      ]
+      ],
+      base: '/'
     }
+  },
+  build: {
+    outDir: 'build',
   },
 })
