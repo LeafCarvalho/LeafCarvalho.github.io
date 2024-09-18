@@ -1,10 +1,10 @@
-import JavascriptImage from "/languages/javascript.png";
-import ReactImage from "/languages/react.png";
-import TypeScriptImage from "/languages/typescript.png";
-import SassImage from "/languages/sass.png";
-import WordpressImage from "/languages/wordpress.png";
-import NodeImage from "/languages/node.png";
-import PhpImage from "/languages/php.png";
+import JavascriptImage from "/languages/javascript.webp";
+import ReactImage from "/languages/react.webp";
+import TypeScriptImage from "/languages/typescript.webp";
+import SassImage from "/languages/sass.webp";
+import WordpressImage from "/languages/wordpress.webp";
+import NodeImage from "/languages/node.webp";
+import PhpImage from "/languages/php.webp";
 import Traço from "/languages/pequeno-traço.svg";
 import { Link } from "react-router-dom";
 import { Fade } from 'react-awesome-reveal';

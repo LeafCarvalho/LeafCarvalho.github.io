@@ -1,4 +1,4 @@
-import Myphoto from '/foto4.png';
+import Myphoto from '/foto4.webp';
 import { Fade } from 'react-awesome-reveal';
 
 export const Introduction = () => {

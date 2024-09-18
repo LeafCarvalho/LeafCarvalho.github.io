@@ -53,42 +53,40 @@ const SocialMedias = () => {
           })
           .catch(err => console.error('Erro ao copiar email: ', err));
       };
-  return (
-<div className="bg-backgroundHeader border-borderColor border-b-2 border-solid text-white p-4 sticky flex justify-center">
-    <div className="container flex flex-col-reverse sm:flex-row justify-between">
-        <div className="flex flex-row space-x-7 justify-center sm:justify-start">
-            {Object.entries(socialMediasRight).map(([name, redeSocial], index) => {
-                return (
-                    redeSocial.name === 'Email' ? (
-                        <>
-                            <button key={index} onClick={copyEmailToClipboard} className="flex items-center">
+      return (
+        <div className="bg-backgroundHeader border-borderColor border-b-2 border-solid text-white p-4 sticky flex justify-center">
+            <div className="container flex flex-col-reverse sm:flex-row justify-between">
+                <div className="flex flex-row space-x-7 justify-center sm:justify-start">
+                    {Object.entries(socialMediasRight).map(([name, redeSocial]) => {
+                        return (
+                            redeSocial.name === 'Email' ? (
+                                <button key={name} onClick={copyEmailToClipboard} className="flex items-center">
+                                    <img src={redeSocial.img} alt={name} className="mr-2"/>
+                                    <span className="tracking-widest">{redeSocial.name}</span>
+                                </button>
+                            ) : (
+                                <a key={name} href={redeSocial.url} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                                    <img src={redeSocial.img} alt={name} className="mr-2"/>
+                                    <span className="tracking-widest">{redeSocial.name}</span>
+                                </a>
+                            )
+                        );
+                    })}
+                    <ToastContainer />
+                </div>
+                <div className="flex flex-row space-x-7 justify-center sm:justify-start sm:mb-0 mb-4 sm:mt-0">
+                    {Object.entries(socialMediasLeft).map(([name, redeSocial]) => {
+                        return (
+                            <a key={name} href={redeSocial.url} target="_blank" rel="noopener noreferrer" className="flex items-center">
                                 <img src={redeSocial.img} alt={name} className="mr-2"/>
                                 <span className="tracking-widest">{redeSocial.name}</span>
-                            </button>
-                            <ToastContainer />
-                        </>
-                    ) : (
-                        <Link key={index} to={redeSocial.url} target="_blank" className="flex items-center">
-                            <img src={redeSocial.img} alt={name} className="mr-2"/>
-                            <span className="tracking-widest">{redeSocial.name}</span>
-                        </Link>
-                    )
-                );
-            })}
+                            </a>
+                        );
+                    })}
+                </div>
+            </div>
         </div>
-        <div className="flex flex-row space-x-7 justify-center sm:justify-start sm:mb-0 mb-4 sm:mt-0">
-            {Object.entries(socialMediasLeft).map(([name, redeSocial], index) => {
-                return (
-                    <Link key={index} to={redeSocial.url} target="_blank" className="flex items-center">
-                        <img src={redeSocial.img} alt={name} className="mr-2"/>
-                        <span className="tracking-widest">{redeSocial.name}</span>
-                    </Link>
-                );
-            })}
-        </div>
-    </div>
-</div>
-  )
+    );
 }
 
 export default SocialMedias
